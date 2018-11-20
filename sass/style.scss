@@ -1,0 +1,153 @@
+@import "normalize.css";
+$main-color: #c0301c;
+$text-color: #555555;
+$bg-color:#f8f8f8;
+$img-color: rgba(192, 48, 28, 0.7);
+$main-font:'Montserrat',
+sans-serif;
+$text-font: 'Roboto Slab',
+serif;
+@media (max-width:1160px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+body {
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 400;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-family: $main-font;
+}
+
+.header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo__h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navigation {
+    width: 50%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -5px;
+    &__list {
+        font-size: 14px;
+        font-weight: 400;
+        list-style: none;
+        position: relative;
+        padding: 5px;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            color: white;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid white;
+            transition: 0s ease opacity .8s, .2s ease width .6s, .2s ease height .8s;
+        }
+        &:hover:before {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+        }
+    }
+}
+
+// %psev {
+//     content: "";
+//     position: absolute;
+//     width: 0;
+//     height: 0;
+//     opacity: 0;
+//     box-sizing: border-box;
+// }
+// .hov__soc--outline:before {
+//     bottom: 0;
+//     left: 0;
+//     border-left: 1px solid $yellow;
+//     border-top: 1px solid $yellow;
+//     transition: .2s ease width, .2s ease height .2s;
+// }
+// .hov__soc--outline:after {
+//     top: 0;
+//     right: 0;
+//     border-right: 1px solid $yellow;
+//     border-bottom: 1px solid $yellow;
+//     transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+// }
+// .hov__soc--outline:hover:before,
+// .hov__soc--outline:hover:after {
+//     height: 100%;
+//     width: 100%;
+//     opacity: 1;
+// }
+// .hov__soc--outline:hover:before {
+//     transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+// }
+// .hov__soc--outline:hover:after {
+//     transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+// }
+.wellcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 11.3% 0;
+    &__btn {
+        font-size: 16px;
+        border: 2px white solid;
+        padding: 18px 34px;
+        text-transform: uppercase;
+        margin-top: 50px;
+        &:hover {
+            color: $main-color;
+            background-color: white;
+            border-color: $main-color;
+            font-weight: 700;
+        }
+    }
+    &__h1 {
+        font-size: 48px;
+        vertical-align: middle;
+        line-height: 24px;
+    }
+    &__text {
+        font-family: $text-font;
+        font-size: 20px;
+    }
+}

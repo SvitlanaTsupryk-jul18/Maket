@@ -1,0 +1,92 @@
+@import url(normalize.css);
+@media (max-width: 1160px) {
+  .container {
+    padding: 0 20px; } }
+
+body {
+  color: #555555;
+  font-family: "Roboto Slab", serif;
+  font-size: 400; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.hero {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-family: "Montserrat", sans-serif; }
+
+.header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.logo__h2 {
+  font-size: 24px;
+  font-weight: 700; }
+
+.navigation {
+  width: 50%; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -5px; }
+  .nav__list {
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+    position: relative;
+    padding: 5px;
+    margin-right: 10px; }
+    .nav__list:last-child {
+      margin-right: 0; }
+    .nav__list a {
+      color: white; }
+    .nav__list:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid white;
+      transition: 0s ease opacity .8s, .2s ease width .6s, .2s ease height .8s; }
+    .nav__list:hover:before {
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+      transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s; }
+
+.wellcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 11.3% 0; }
+  .wellcome__btn {
+    font-size: 16px;
+    border: 2px white solid;
+    padding: 18px 34px;
+    text-transform: uppercase;
+    margin-top: 50px; }
+    .wellcome__btn:hover {
+      color: #c0301c;
+      background-color: white;
+      border-color: #c0301c;
+      font-weight: 700; }
+  .wellcome__h1 {
+    font-size: 48px;
+    vertical-align: middle;
+    line-height: 24px; }
+  .wellcome__text {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px; }
