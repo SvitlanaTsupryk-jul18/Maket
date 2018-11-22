@@ -1,0 +1,41 @@
+.servises {
+    text-align: center;
+    font-size: 14px;
+    &__text {
+        line-height: 24px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    &__offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__title {
+        font-family: $main-font;
+        text-transform: uppercase;
+        padding: 25px 0;
+    }
+    &__img {
+        border-radius: 50%;
+        border: 2px #dddddd solid;
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+        background-color: #ffffff;
+        transition: all 0.3s ease-out;
+        &:hover {
+            background-color: $main-color;
+            path {
+                fill: #fff;
+            }
+        }
+    }
+}

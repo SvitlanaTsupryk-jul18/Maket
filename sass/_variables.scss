@@ -1,0 +1,50 @@
+$main-color: #c0301c;
+$text-color: #555555;
+$bg-color:#f8f8f8;
+$img-color: rgba(192, 48, 28, 0.7);
+$main-font:'Montserrat',
+sans-serif;
+$text-font: 'Roboto Slab',
+serif;
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width:1160px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+body {
+    color: $text-color;
+    font-family: $text-font;
+    font-weight: 400;
+}
+
+.sctitle {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding: 100px 0 60px 0;
+    &:before {
+        position: absolute;
+        content: " ";
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 50px;
+        height: 2px;
+        background-color: $text-color;
+    }
+}
+
+.undertitle {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 70px;
+}
