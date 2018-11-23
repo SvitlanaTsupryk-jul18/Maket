@@ -1,13 +1,13 @@
 .servises {
     text-align: center;
     font-size: 14px;
+    padding: $sec-padding 0;
     &__text {
         line-height: 24px;
     }
     &__inner {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 100px;
     }
     &__offer {
         display: flex;

@@ -6,6 +6,7 @@ $main-font:'Montserrat',
 sans-serif;
 $text-font: 'Roboto Slab',
 serif;
+$sec-padding: 100px;
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -29,11 +30,11 @@ body {
     font-size: 20px;
     text-align: center;
     position: relative;
-    padding: 100px 0 60px 0;
+    padding-bottom: 60px;
     &:before {
         position: absolute;
         content: " ";
-        top: 150px;
+        top: 50px;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;

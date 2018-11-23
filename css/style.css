@@ -18,11 +18,11 @@ body {
   font-size: 20px;
   text-align: center;
   position: relative;
-  padding: 100px 0 60px 0; }
+  padding-bottom: 60px; }
   .sctitle:before {
     position: absolute;
     content: " ";
-    top: 150px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -116,13 +116,13 @@ body {
 
 .servises {
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 100px 0; }
   .servises__text {
     line-height: 24px; }
   .servises__inner {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px; }
+    justify-content: space-between; }
   .servises__offer {
     display: flex;
     flex-direction: column;
@@ -148,7 +148,8 @@ body {
         fill: #fff; }
 
 .about {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  padding: 100px 0; }
   .about__articles {
     display: flex;
     justify-content: space-between; }
@@ -161,9 +162,8 @@ body {
   .about__slider {
     width: 100%;
     height: 300px;
-    margin-bottom: 100px;
-    border: 1px black solid;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
 
 .slider {
   width: 200%;
