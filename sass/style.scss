@@ -47,6 +47,9 @@
         width: 60%;
         animation: fadeEffect 1s;
     }
+    &__content {
+        display: grid;
+    }
 }
 
 .show {
