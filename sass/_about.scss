@@ -88,6 +88,8 @@
     top: 30%;
     margin: 0 0.5em;
     transition: all 0.3s ease;
+    outline-color: white;
+    cursor: pointer;
     &:hover {
         background-color: $main-color;
     }

@@ -2,4 +2,62 @@
 @import 'variables';
 @import 'hero';
 @import 'servises';
-@import 'about'
+@import 'about';
+.works {
+    padding: $sec-padding 0;
+    &__tab {
+        text-align: center;
+        transition: 0.3s;
+    }
+    &__tablinks {
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5em 1em;
+        overflow: hidden;
+        position: relative;
+        &:active,
+        &:focus {
+            color: $main-color;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            height: 2px;
+            background: $main-color;
+            content: '';
+            transition: transform 0.2s linear;
+            transform: translate(-100%, 0);
+        }
+        &:hover {
+            color: $main-color;
+            &::before {
+                transform: translate(0, 0);
+            }
+        }
+    }
+    &__tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        width: 60%;
+        animation: fadeEffect 1s;
+    }
+}
+
+.show {
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
