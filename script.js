@@ -1,8 +1,9 @@
-//////////about slider
-
 (function() {
     // invocation
     sliderAbout();
+    Tabs();
+
+    ////////// slider in about
 
     function sliderAbout() {
         var slwrapper = document.querySelector(".about__slider");
@@ -27,20 +28,14 @@
             console.log(sdvig);
         });
     }
-})();
 
-/////////tabs in works
-
-(function() {
-    Tabs();
-
+    /////////tabs in works
     function Tabs() {
         var works = document.querySelector(".works");
         var tab = works.querySelectorAll('[data-item]');
         var cont = works.querySelector('.works__content');
         var tabLength = tab.length;
         var tabcontent = cont.querySelectorAll('.works__tabcontent');
-
         tab.forEach(function(item, i, arr) {
             tab[i].addEventListener("click", show);
         });
@@ -53,4 +48,5 @@
             cont.querySelector("[" + c + "]").classList.add("show");
         };
     }
+
 })();

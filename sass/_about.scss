@@ -53,6 +53,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        transition: all 0.5s ease-in;
     }
     &__icons {
         padding-bottom: 2em;
