@@ -4,3 +4,29 @@
 @import 'servises';
 @import 'about';
 @import 'works';
+.project {
+    color: white;
+    text-align: center;
+    background-image: url(../images/parralax.png);
+    background-color: $main-color;
+    padding: 100px 0;
+    &__text {
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    &__btn {
+        font-size: 18px;
+        color: white;
+        border: 2px white solid;
+        border-radius: 2px;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+        padding: 18px 27px;
+        background: none;
+        &:hover {
+            color: $main-color;
+            background-color: white;
+            border-color: $main-color;
+        }
+    }
+}
