@@ -320,12 +320,21 @@ body {
 .project {
   color: white;
   text-align: center;
-  background-image: url(../images/parralax.png);
-  background-color: #c0301c;
-  padding: 100px 0; }
+  background: url(../images/parralax.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%; }
+  .project:hover .project__inner {
+    background-color: rgba(192, 48, 28, 0.6); }
+  .project__inner {
+    background-color: transparent;
+    padding: 100px 0;
+    transition: all .3s ease-out; }
   .project__text {
     font-size: 30px;
-    padding-bottom: 50px; }
+    padding-bottom: 1.5em; }
   .project__btn {
     font-size: 18px;
     color: white;
