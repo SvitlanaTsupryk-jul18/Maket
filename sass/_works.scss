@@ -38,7 +38,7 @@
         display: none;
         grid: repeat(3, 1fr)/repeat(3, 1fr);
         grid-gap: 2em;
-        animation: fadeEffect 1s;
+        animation: fadeEffect .5s;
     }
 }
 

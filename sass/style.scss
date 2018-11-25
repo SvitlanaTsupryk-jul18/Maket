@@ -1,7 +1,108 @@
-@import "normalize.css";
-@import 'variables';
-@import 'hero';
-@import 'servises';
-@import 'about';
-@import 'works';
-@import 'project';
+    @import "normalize.css";
+    @import 'variables';
+    @import 'hero';
+    @import 'servises';
+    @import 'about';
+    @import 'works';
+    @import 'project';
+    .blog {
+        padding: $sec-padding 0;
+        &__line {
+            background-color: #dddddd;
+            width: 100%;
+            height: 1px;
+            margin: 38px 0;
+            border: none;
+        }
+    }
+    
+    .post {
+        display: flex;
+        &__img {
+            width: 40%;
+            padding-right: 2em;
+            display: inline-block;
+        }
+        &__date {
+            color: #777777;
+            font-family: $main-font;
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            border: 2px $text-color solid;
+            padding: 1em;
+            line-height: 0.5em;
+            height: 3em;
+            margin-right: 1em;
+            float: left;
+        }
+        &__title {
+            font-family: $main-font;
+            font-size: 16px;
+            padding: 13px 0;
+            text-transform: uppercase;
+        }
+        &__undertitle {
+            font-size: 13px;
+            color: #777777;
+            padding-bottom: 2.5em;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &__link {
+            font-size: 13px;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-top: 2em;
+            font-weight: 700;
+            &:hover {
+                color: $main-color;
+                animation: flipInX .5s 1;
+            }
+        }
+        &:hover .hovred,
+        &:hover &__title {
+            color: $main-color;
+        }
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+    
+    @keyframes flipInX {
+        from {
+            //transform: rotate3d(1, 0, 0, 90deg);
+            opacity: 0;
+        }
+        40% {
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        60% {
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+            opacity: 1;
+        }
+        80% {
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        }
+        to {
+            -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+        }
+    }
+    
+    // post__img {
+    //     display: inline-block;
+    //     position: absolute;
+    //     width: 100%;
+    //     left: 0;
+    //     z-index: -1;
+    //     opacity: 0.4;

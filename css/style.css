@@ -267,7 +267,7 @@ body {
     display: none;
     grid: repeat(3, 1fr)/repeat(3, 1fr);
     grid-gap: 2em;
-    animation: fadeEffect 1s; }
+    animation: fadeEffect .5s; }
 
 .example {
   position: relative;
@@ -348,3 +348,78 @@ body {
       color: #c0301c;
       background-color: white;
       border-color: #c0301c; }
+
+.blog {
+  padding: 100px 0; }
+  .blog__line {
+    background-color: #dddddd;
+    width: 100%;
+    height: 1px;
+    margin: 38px 0;
+    border: none; }
+
+.post {
+  display: flex; }
+  .post__img {
+    width: 40%;
+    padding-right: 2em;
+    display: inline-block; }
+  .post__date {
+    color: #777777;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    border: 2px #555555 solid;
+    padding: 1em;
+    line-height: 0.5em;
+    height: 3em;
+    margin-right: 1em;
+    float: left; }
+  .post__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 13px 0;
+    text-transform: uppercase; }
+  .post__undertitle {
+    font-size: 13px;
+    color: #777777;
+    padding-bottom: 2.5em; }
+  .post__text {
+    font-size: 14px;
+    line-height: 24px; }
+  .post__link {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 2em;
+    font-weight: 700; }
+    .post__link:hover {
+      color: #c0301c;
+      animation: flipInX .5s 1; }
+  .post:hover .hovred,
+  .post:hover .post__title {
+    color: #c0301c; }
+  .post::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+@keyframes flipInX {
+  from {
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
