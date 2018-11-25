@@ -331,7 +331,7 @@ body {
   .project__inner {
     background-color: transparent;
     padding: 100px 0;
-    transition: all .3s ease-out; }
+    transition: all .2s ease-out; }
   .project__text {
     font-size: 30px;
     padding-bottom: 1.5em; }
@@ -393,10 +393,11 @@ body {
     text-transform: uppercase;
     display: inline-block;
     padding-top: 2em;
-    font-weight: 700; }
+    font-weight: 700;
+    transition: all .3s ease-in; }
     .post__link:hover {
       color: #c0301c;
-      animation: flipInX .5s 1; }
+      transform: scaleX(1.1) translateX(10px); }
   .post:hover .hovred,
   .post:hover .post__title {
     color: #c0301c; }
@@ -405,21 +406,53 @@ body {
     clear: both;
     display: table; }
 
-@keyframes flipInX {
+.clients {
+  width: 100%;
+  padding: 100px 20px;
+  position: relative;
+  margin: auto;
+  font-size: 20px;
+  background-color: #f8f8f8;
+  text-align: center; }
+  .clients__slide {
+    animation: fade 1.5s 1;
+    text-align: center; }
+  .clients__brands {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px; }
+  .clients__logo {
+    padding-right: 50px;
+    padding-bottom: 20px;
+    transition: all .3s ease-in-out; }
+    .clients__logo:hover {
+      transform: scale(1.2); }
+  .clients__review {
+    font-size: 18px;
+    padding-bottom: 40px;
+    width: 100%; }
+  .clients__dots {
+    text-align: center;
+    padding-top: 40px; }
+  .clients__dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease; }
+    .clients__dot:hover {
+      background-color: #c0301c; }
+
+.js-active {
+  background-color: #c0301c; }
+
+@keyframes fade {
   from {
-    opacity: 0; }
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1; }
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+    opacity: .4; }
   to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px); } }
+    opacity: 1; } }
