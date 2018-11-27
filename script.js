@@ -4,6 +4,7 @@
     Tabs();
     var slideIndex = 0;
     showSlides();
+    jsForm();
     ////////// slider in about
 
     function sliderAbout() {
@@ -73,4 +74,97 @@
     //////// validation form 
 
 
+
+    function jsForm() {
+        let form = document.querySelector('.js-form');
+        if (!form) return console.log('Форма не найдена');
+        form.setAttribute('novalidate', 'true');
+        let inputs = form.querySelectorAll('.form__input');
+        let isValid = true;
+        let errorClass = 'form__error';
+        let errors = {
+            default: errorClass,
+            required: errorClass + '--required',
+            pattern: errorClass + '--pattern'
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            isValid = true;
+            setToDefaultStyles();
+            // validate inputs
+            validateInputs();
+            // try to submit
+            submitForm();
+        });
+
+        function setToDefaultStyles() {
+            inputs.forEach(element => {
+                element.classList.remove(errors.default, errors.required, errors.pattern);
+            });
+        }
+
+        function validateInputs() {
+            inputs.forEach(element => {
+                isValid = checkOnRequired(element) && isValid; // true or false
+            });
+
+        };
+
+        function checkOnRequired(input) {
+            if (input.hasAttribute('required')) {
+                if (input.value.trim() === '') {
+                    input.classList.add(errors.required);
+
+                    return false;
+                } else {
+                    return true;
+                }
+            } else {
+                return true;
+            }
+        }
+
+        function submitForm() {
+            if (!isValid) return console.log('NOT VALID');
+            let femail = form.querySelector(".js-email");
+
+            if (validateEmail(femail.value)) {
+                console.log("ok");
+                isValid = true;
+            } else {
+                swal({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Please enter correct email!'
+                });
+                //alert("Please enter correct email");
+                isValid = false;
+                femail.classList.add(errors.pattern);
+
+            }
+
+            function validateEmail(email) {
+                let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+            // AJAX
+
+
+            // Success messages
+            if (isValid) {
+                //sendForm();
+
+                swal(
+                    'Good job!',
+                    'You log in!',
+                    'success'
+                )
+                form.querySelector('.form__btn').disabled = true;
+            } else {
+                form.reset();
+
+            }
+        }
+    }
 })();

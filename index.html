@@ -717,7 +717,9 @@
                     <form class="form js-form" action="/example/handler.php" method="post">
                         <div class="form__wrap">
                             <input class="form__input " type="text" name="user-name" required placeholder="YOUR NAME">
-                            <input class="form__input" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="YOUR EMAIL">
+                            <p class="message-error--required">* You should enter your name here</p>
+                            <input class="form__input js-email" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="YOUR EMAIL">
+                            <p class="message-error--required">* You should enter your email here</p>
                         </div>
                         <div class="form__wrap">
                             <input class="form__input" type="text" name="subject" placeholder="YOUR SUBJECT">

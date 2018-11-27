@@ -593,6 +593,19 @@ body {
       background-color: #c0301c;
       border-color: white;
       border-radius: 3px; }
+  .form__error--required {
+    background-color: rgba(192, 48, 28, 0.2); }
+    .form__error--required + .message-error--required {
+      display: block; }
+  .form__error--pattern {
+    border: 3px #c0301c solid;
+    border-radius: 3px; }
 
 .red {
   color: #c0301c; }
+
+.message-error--required {
+  color: #c0301c;
+  display: none;
+  font-size: 12px;
+  padding-left: 10px; }
