@@ -1,0 +1,87 @@
+.footer {
+    padding: $sec-padding 0;
+    background-color: $main-color;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    &__socials {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 60px;
+        &:before {
+            position: absolute;
+            content: " ";
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 50px;
+            height: 2px;
+            background-color: white;
+        }
+    }
+    &__icon {
+        padding-right: 30px;
+        position: relative;
+        transition: all 1s ease-in;
+        &:nth-child(2) {
+            padding: 0 40px 0 2px;
+        }
+        &::before {
+            position: absolute;
+            content: url(../images/icons/Ellipse.svg);
+            top: -50%;
+            left: -20%;
+        }
+        &:hover {
+            animation: flip 0.5s ease-in 1 $main-color;
+            color: white;
+        }
+    }
+}
+
+@keyframes flip {
+    from {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    80% {
+        -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    to {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+}
+
+.wrapper {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 5px #fff;
+}

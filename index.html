@@ -680,7 +680,56 @@
                 </div>
             </div>
         </section>
-        <section class="contact container "></section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="sctitle">Get in touch</h2>
+                <p class="undertitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+                <div class="contacts__wrapper">
+                    <div class="contact">
+                        <div class="contact__info">
+                            <img class="contact__img" src="./images/icons/fa-map-marker.svg" alt="map-icon">
+                            <div>
+                                <h3 class="contact__title">Address</h3>
+                                <address class="contact__link">
+                                312, 7th Ave, New York <br>NY 101200, United States of America
+                                </address>
+                            </div>
+                        </div>
+                        <div class="contact__info">
+                            <img class="contact__img" src="./images/icons/fa-mobile-phone.svg" alt="phone-icon">
+                            <div>
+                                <h3 class="contact__title">Hotline (24x7)</h3>
+                                <a class="contact__link" href="tel: +65 0052 300">+65 0052 300</a>
+                                <a class="contact__link" href="tel: +65 88251 210">+65 88251 210</a>
+                                <a class="contact__link" href="tel: +88 01723 511 340">+88 01723 511 340</a>
+                            </div>
+                        </div>
+                        <div class="contact__info">
+                            <img class="contact__img" src="./images/icons/fa-envelope-o.svg" alt="email-icon">
+                            <div>
+                                <h3 class="contact__title">E-mail</h3>
+                                <a class="contact__link" href="mailto: shapedtheme@gmail.com">shapedtheme@gmail.coь</a>
+                                <a class="contact__link" href="mailto: khalilkode@gmail.com">khalilkode@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form js-form" action="/example/handler.php" method="post">
+                        <div class="form__wrap">
+                            <input class="form__input " type="text" name="user-name" required placeholder="YOUR NAME">
+                            <input class="form__input" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="YOUR EMAIL">
+                        </div>
+                        <div class="form__wrap">
+                            <input class="form__input" type="text" name="subject" placeholder="YOUR SUBJECT">
+                            <input class="form__input" type="text" name="company-name" placeholder="YOUR COMPANY">
+                        </div>
+                        <textarea class="form__input form__input--textarea" type="text" name="message" placeholder="WRITE YOUR MESSAGE"></textarea>
+                        <button class="form__input form__btn" type="submit">SEND MESSAGE</button>
+                        <span class="red">*</span>We’ll contact you as as possible. We don’t reply on Monday.
+                    </form>
+
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer class="footer ">
@@ -693,8 +742,6 @@
         <p>© 2015 Startup, Designed by ShapedTheme</p>
     </footer>
 
-    <script>
-    </script>
     <script src="script.js " defer></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>

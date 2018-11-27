@@ -7,90 +7,85 @@
     @import 'project';
     @import 'blog';
     @import 'clients';
-    .footer {
+    @import 'footer';
+    .contacts {
         padding: $sec-padding 0;
-        background-color: $main-color;
-        color: white;
-        font-size: 12px;
-        text-align: center;
-        text-transform: uppercase;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        &__socials {
+        &__wrapper {
             display: flex;
-            justify-content: center;
-            position: relative;
-            padding-bottom: 60px;
-            &:before {
-                position: absolute;
-                content: " ";
-                top: 50px;
-                left: 50%;
-                transform: translateX(-50%);
-                text-align: center;
-                width: 50px;
-                height: 2px;
-                background-color: white;
+        }
+    }
+    
+    .contact {
+        padding-right: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        &__info {
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 2em;
+            &:hover .contact__img {
+                transform: scale(1.2);
+                filter: drop-shadow(5px 0px 1px $main-color);
             }
         }
-        &__icon {
-            padding-right: 30px;
-            position: relative;
-            transition: all 1s ease-in;
-            &:nth-child(2) {
-                padding: 0 40px 0 2px;
+        &__img {
+            padding-right: 1em;
+            transition: all 0.3s ease;
+        }
+        &__title {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: $main-font;
+            padding-bottom: 20px;
+        }
+        &__link {
+            font-size: 12px;
+            text-decoration: none;
+            color: $text-color;
+            line-height: 20px;
+        }
+    }
+    
+    .form {
+        display: flex;
+        width: 70%;
+        flex-direction: column;
+        &__input {
+            font-size: 12px;
+            padding: 17px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            width: 48%;
+            &--textarea {
+                width: 100%;
+                height: 100px;
             }
-            &::before {
-                position: absolute;
-                content: url(../images/icons/Ellipse.svg);
-                top: -50%;
-                left: -20%;
+            &:active,
+            &:focus {
+                border-color: #c0301c;
+                outline-color: #c0301c;
             }
+        }
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__btn {
+            padding: 17px 36px;
+            background-color: white;
+            width: 170px;
+            transition: all 0.2s ease;
+            float: left;
             &:hover {
-                animation: flip 0.5s ease-in 1 $main-color;
                 color: white;
+                background-color: $main-color;
+                border-color: white;
+                border-radius: 3px;
             }
         }
     }
     
-    @keyframes flip {
-        from {
-            -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
-            transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
-            -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-        }
-        40% {
-            -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-            transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-            -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-        }
-        50% {
-            -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-            transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-            -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-        }
-        80% {
-            -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-            transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-            -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-        }
-        to {
-            -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-            transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-            -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-        }
-    }
-    
-    .wrapper {
-        background-color: #fff;
-        position: relative;
-        z-index: 2;
-        box-shadow: 0 0 5px #fff;
+    .red {
+        color: $main-color;
     }
