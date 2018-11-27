@@ -70,5 +70,7 @@
         setTimeout(showSlides, 2500); // Change image every 2 seconds
     }
 
+    //////// validation form 
+
 
 })();
