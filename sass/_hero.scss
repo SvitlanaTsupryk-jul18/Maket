@@ -30,34 +30,34 @@
         font-size: 14px;
         font-weight: 400;
         list-style: none;
-        position: relative;
-        padding: 5px;
         margin-right: 10px;
         &:last-child {
             margin-right: 0;
         }
         a {
             color: white;
-        }
-        &:before {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            opacity: 0;
-            box-sizing: border-box;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border: 1px solid white;
-            transition: 0s ease opacity .8s, .2s ease width .6s, .5s ease height .8s;
-        }
-        &:hover:before {
-            height: 100%;
-            width: 100%;
-            opacity: 1;
-            transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+            position: relative;
+            padding: 5px;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                box-sizing: border-box;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid white;
+                transition: 0s ease opacity .8s, .2s ease width .6s, .5s ease height .8s;
+            }
+            &:hover:before {
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+                transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+            }
         }
     }
 }
