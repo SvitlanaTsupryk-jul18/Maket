@@ -219,7 +219,7 @@
                 padding: '3em',
                 background: 'white',
                 confirmButtonColor: "#c0301c",
-                confirmButtonText: "Get in touch",
+                confirmButtonText: "Good choice!",
                 showCancelButton: true,
                 cancelButtonText: "Later",
             })
