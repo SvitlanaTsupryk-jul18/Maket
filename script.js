@@ -192,6 +192,39 @@
 
 
     }
+    //////buttons modal
+
+    modal();
+
+    function modal() {
+        let modalbtn = document.querySelector(".wellcome__btn");
+        let modalbtnPro = document.querySelector(".project__btn");
+
+        modalbtn.addEventListener("click", function () {
+            swal({
+                title: 'Hello! my Friend',
+                width: 600,
+                padding: '3em',
+                background: 'white',
+                confirmButtonColor: "#c0301c",
+                //swal.getContent ()
+                customClass: 'animated rubberBand'
+            });
+        });
+        modalbtnPro.addEventListener("click", function () {
+            swal({
+                title: 'Let\'s talk about YOUR PROJECT!',
+                type: "success",
+                width: 600,
+                padding: '3em',
+                background: 'white',
+                confirmButtonColor: "#c0301c",
+                confirmButtonText: "Get in touch",
+                showCancelButton: true,
+                cancelButtonText: "Later",
+            })
+        })
+    }
 
     ////smoothScroll
 
