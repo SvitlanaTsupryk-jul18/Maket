@@ -117,11 +117,26 @@
 
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .example__context {
         visibility: visible;
         opacity: 1;
         background-color: rgba(192, 48, 28, 0.3);
     }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .works__tabcontent {
+        grid: repeat(5, 1fr)/repeat(2, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 470px) and(min-width: 320px) {
+    .works__tabcontent {
+        grid: repeat(5, 1fr)/repeat(1, 1fr);
+    }
+
 }

@@ -122,9 +122,31 @@
 }
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .slider__social {
         visibility: visible;
         background-color: rgba(85, 85, 85, 0.3);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .slider {
+        width: 100%;
+        flex-wrap: wrap;
+
+        &__inner {
+            width: 50%;
+        }
+    }
+
+    .prev,
+    .next {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 470px) and(min-width: 320px) {
+    .about__articles {
+        flex-wrap: wrap;
     }
 }

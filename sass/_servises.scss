@@ -49,3 +49,16 @@
         }
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .servises {
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__offer {
+            margin: 0;
+            padding-bottom: 20px;
+        }
+    }
+}

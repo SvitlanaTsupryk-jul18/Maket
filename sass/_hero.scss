@@ -104,7 +104,7 @@
     background-color: rgba(192, 48, 28, 0.7);
     padding: 10px;
     transition: .5s;
-    transform: translate(200%);
+    transform: translate(500%);
     position: fixed;
     right: 10%;
 
@@ -161,7 +161,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .menu {
         display: none;
     }
@@ -169,6 +169,10 @@
     .burger--visibility {
         display: flex;
     }
+}
 
-
+@media only screen and (max-width: 590px) {
+    .wellcome__h1 {
+        line-height: 1;
+    }
 }

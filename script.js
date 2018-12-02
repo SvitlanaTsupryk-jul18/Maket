@@ -5,6 +5,7 @@
     var slideIndex = 0;
     showSlides();
     jsForm();
+    burger();
     ////////// slider in about
 
     function sliderAbout() {
@@ -169,7 +170,7 @@
             }
         }
     }
-    burger();
+
     ///burger-menu
     function burger() {
         let menu = document.querySelector(".mob-menu");
@@ -186,7 +187,7 @@
 
         function hide() {
             openbtn.classList.add("burger--visibility");
-            menu.style.transform = ("translate(200%)");
+            menu.style.transform = ("translate(500%)");
         }
 
 
