@@ -1,28 +1,36 @@
 .servises {
     text-align: center;
     font-size: 14px;
-    padding: $sec-padding 0;
+    @extend %sec-padding;
+    padding-left: 20px;
+    padding-right: 20px;
+
     &__text {
         line-height: 24px;
     }
+
     &__inner {
         display: flex;
         justify-content: space-between;
     }
+
     &__offer {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-right: 40px;
+
         &:last-child {
             margin-right: 0;
         }
     }
+
     &__title {
         font-family: $main-font;
         text-transform: uppercase;
         padding: 25px 0;
     }
+
     &__img {
         border-radius: 50%;
         border: 2px #dddddd solid;
@@ -31,8 +39,10 @@
         padding: 20px;
         background-color: #ffffff;
         transition: all 0.3s ease-out;
+
         &:hover {
             background-color: $main-color;
+
             path {
                 fill: #fff;
             }

@@ -1,4 +1,4 @@
-(function() {
+(function () {
     // invocation
     sliderAbout();
     Tabs();
@@ -15,7 +15,7 @@
         var slide = slider.querySelector(".slider__inner").offsetWidth;
 
         var sdvig = 0;
-        slwrapper.addEventListener("click", function(event) {
+        slwrapper.addEventListener("click", function (event) {
             if (event.target == next) {
                 sdvig -= slide;
                 if (sdvig < -slide * 4) {
@@ -39,12 +39,12 @@
         var cont = works.querySelector('.works__content');
         var tabLength = tab.length;
         var tabcontent = cont.querySelectorAll('.works__tabcontent');
-        tab.forEach(function(item, i, arr) {
+        tab.forEach(function (item, i, arr) {
             tab[i].addEventListener("click", show);
         });
 
         function show() {
-            tabcontent.forEach(function(item, i, arr) {
+            tabcontent.forEach(function (item, i, arr) {
                 tabcontent[i].classList.remove("show");
             });
             let c = 'data-item =' + '"' + this.dataset.item + '"';
@@ -62,7 +62,9 @@
             slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" js-active", "");
         }
@@ -88,7 +90,7 @@
             pattern: errorClass + '--pattern'
         }
 
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
             isValid = true;
             setToDefaultStyles();
@@ -167,17 +169,21 @@
             }
         }
     }
-    smoothScrollLinks();
-    function smoothScrollLinks() {
 
-		document.querySelectorAll('a[href^="#"]').forEach(link => {
-			link.addEventListener('click', function (e) {
-				e.preventDefault();
- 				
- 				document.querySelector(this.getAttribute('href')).scrollIntoView({
-					behavior: 'smooth'
-				});
-			});
-		});
-	}
+    ////smoothScroll
+
+    smoothScrollLinks();
+
+    function smoothScrollLinks() {
+        let nav = document.querySelector(".nav")
+        nav.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log(this.getAttribute('href'));
+                nav.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }
 })();

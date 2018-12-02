@@ -1,15 +1,17 @@
 .clients {
     width: 100%;
-    padding: $sec-padding 20px;
+    @extend %sec-padding;
     position: relative;
     margin: auto;
     font-size: 20px;
     background-color: #f8f8f8;
     text-align: center;
+
     &__slide {
         animation: fade 1.5s 1;
         text-align: center;
     }
+
     &__brands {
         display: flex;
         align-items: center;
@@ -18,23 +20,28 @@
         width: 100%;
         padding-bottom: 30px;
     }
+
     &__logo {
         padding-right: 50px;
         padding-bottom: 20px;
         transition: all .3s ease-in-out;
+
         &:hover {
             transform: scale(1.2);
         }
     }
+
     &__review {
         font-size: 18px;
         padding-bottom: 40px;
         width: 100%;
     }
+
     &__dots {
         text-align: center;
         padding-top: 40px;
     }
+
     &__dot {
         height: 13px;
         width: 13px;
@@ -43,6 +50,7 @@
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.5s ease;
+
         &:hover {
             background-color: $main-color;
         }
@@ -57,6 +65,7 @@
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }

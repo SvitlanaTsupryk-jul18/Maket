@@ -6,7 +6,11 @@ $main-font:'Montserrat',
 sans-serif;
 $text-font: 'Roboto Slab',
 serif;
-$sec-padding: 100px;
+
+%sec-padding {
+    padding: 100px 0;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -23,6 +27,7 @@ body {
     font-family: $text-font;
     font-weight: 400;
     padding-bottom: 295px;
+    scroll-behavior: smooth;
 }
 
 .sctitle {
@@ -32,6 +37,7 @@ body {
     text-align: center;
     position: relative;
     padding-bottom: 60px;
+
     &:before {
         position: absolute;
         content: " ";
@@ -49,4 +55,10 @@ body {
     font-size: 16px;
     text-align: center;
     margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    %sec-padding {
+        padding: 50px 0;
+    }
 }

@@ -18,26 +18,27 @@
     font-weight: 700;
 }
 
-.navigation {
-    width: 50%;
-}
 
 .nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: -5px;
+
     &__list {
         font-size: 14px;
         font-weight: 400;
         list-style: none;
         margin-right: 10px;
+
         &:last-child {
             margin-right: 0;
         }
+
         a {
             color: white;
             position: relative;
             padding: 5px;
+
             &:before {
                 content: "";
                 position: absolute;
@@ -52,6 +53,7 @@
                 border: 1px solid white;
                 transition: 0s ease opacity .8s, .2s ease width .6s, .5s ease height .8s;
             }
+
             &:hover:before {
                 height: 100%;
                 width: 100%;
@@ -68,6 +70,7 @@
     align-items: center;
     text-align: center;
     padding: 11.3% 0;
+
     &__btn {
         font-size: 16px;
         border: 2px white solid;
@@ -75,6 +78,7 @@
         text-transform: uppercase;
         margin-top: 50px;
         transition: all 0.2s ease;
+
         &:hover {
             color: $main-color;
             background-color: white;
@@ -82,13 +86,91 @@
             font-weight: 700;
         }
     }
+
     &__h1 {
         font-size: 48px;
         vertical-align: middle;
         line-height: 24px;
     }
+
     &__text {
         font-family: $text-font;
         font-size: 20px;
     }
+}
+
+.mob-menu {
+    flex-direction: column;
+    background-color: rgba(192, 48, 28, 0.7);
+    padding: 10px;
+    transition: .5s;
+    transform: translate(200%);
+    position: fixed;
+    right: 10%;
+
+    .nav__list {
+        padding: 10px;
+    }
+}
+
+
+
+.burger-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    background: none;
+    border: none;
+    outline-color: white;
+    position: fixed;
+    height: 55px;
+    right: 10%;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgba(192, 48, 28, 0.7);
+    z-index: 2;
+
+    span {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+
+    }
+
+}
+
+// .burger--visibility {
+//     display: none;
+// }
+
+.burger-close {
+    color: white;
+    transition: transform .3s;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 4em;
+    background: none;
+    border: none;
+    outline-color: white;
+    display: block;
+    width: 100%;
+
+    &:hover {
+        transform: scale(2) rotate(90deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    // .burger--visibility {
+    //     display: flex;
+    // }
+
+
 }

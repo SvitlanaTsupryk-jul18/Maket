@@ -7,18 +7,22 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
+
     &:hover &__inner {
         background-color: rgba(192, 48, 28, 0.6);
     }
+
     &__inner {
         background-color: transparent;
         padding: 100px 0;
         transition: all .2s ease-out;
     }
+
     &__text {
         font-size: 30px;
         padding-bottom: 1.5em;
     }
+
     &__btn {
         font-size: 18px;
         color: white;
@@ -28,10 +32,19 @@
         transition: all 0.2s ease;
         padding: 18px 27px;
         background: none;
+
         &:hover {
             color: $main-color;
             background-color: white;
             border-color: $main-color;
         }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .project__inner {
+        background-color: rgba(192, 48, 28, 0.6);
     }
 }

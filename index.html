@@ -19,18 +19,33 @@
                     <div class="logo">
                         <h2 class="logo__h2"><a>Startup</a></h2>
                     </div>
-                    <nav class="navigation">
-                        <ul class="nav">
+                    <nav>
+                        <ul class="nav menu">
                             <li class="nav__list"><a href="#">Home</a></li>
-                            <li class="nav__list"><a href="#">Services</a></li>
-                            <li class="nav__list"><a href="#">About</a></li>
-                            <li class="nav__list"><a href="#">Works</a></li>
-                            <li class="nav__list"><a href="#">Blog</a></li>
-                            <li class="nav__list"><a href="#">Clients</a></li>
-                            <li class="nav__list"><a href="#">Contact</a></li>
-
+                            <li class="nav__list"><a href="#servises">Services</a></li>
+                            <li class="nav__list"><a href="#about">About</a></li>
+                            <li class="nav__list"><a href="#works">Works</a></li>
+                            <li class="nav__list"><a href="#blog">Blog</a></li>
+                            <li class="nav__list"><a href="#clients">Clients</a></li>
+                            <li class="nav__list"><a href="#contacts">Contact</a></li>
+                        </ul>
+                        <ul class="nav mob-menu">
+                            <li class="nav__list"><button type="button" class="burger-close js-burger-close">&times;</button></li>
+                            <li class="nav__list"><a href="#">Home</a></li>
+                            <li class="nav__list"><a href="#servises">Services</a></li>
+                            <li class="nav__list"><a href="#about">About</a></li>
+                            <li class="nav__list"><a href="#works">Works</a></li>
+                            <li class="nav__list"><a href="#blog">Blog</a></li>
+                            <li class="nav__list"><a href="#clients">Clients</a></li>
+                            <li class="nav__list"><a href="#contacts">Contact</a></li>
                         </ul>
                     </nav>
+                    <button type="button" class="burger-open js-burger-open burger--visibility">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
                 </header>
                 <section class="wellcome">
                     <h1 class="wellcome__h1">Welcome to STARTUP</h1>
@@ -39,67 +54,85 @@
                 </section>
             </div>
         </div>
-        <section class="servises container">
+        <section class="servises">
+            <a name="servises"></a>
             <h2 class="sctitle">Services</h2>
             <p class="undertitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
             <div class="servises__inner">
                 <div class="servises__offer">
-                    <svg class="servises__img xmlns=" http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="43px " height="40px " viewBox="0 0 43 40 ">
+                    <svg class="servises__img" xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
+                        width=" 43px " height="40px " viewBox="0 0 43 40 ">
                         <path fillRule="evenodd " d="M 18.73 11.22C 20.57 15 22.15 19.04 23.49 22.99 23 23.02 22.51 23.05 22.02 23.05 19.46 23.05 16.9 22.97 14.34 22.94 14.34 22.94 18.73 11.22 18.73 11.22ZM-0 40C 1.63 40 3.23 39.92 4.86 39.64 5.22 39.58
                         5.74 39.43 6.1 39.43 9.1 39.43 12.12 39.95 15.12 39.95 15.14 39.71 15.17 39.48 15.17 39.24 15.17 38.72 15.17 38.23 15.14 37.73 13.67 37.53 9.87 37.45 9.87 35.44 9.87 34.45 12.48 27.63 13.15 26.12 13.15 26.12 24.78 26.17 24.78 26.17
                         25.2 27.24 28.53 34.97 28.53 35.91 28.53 36.87 27.16 37.06 26.46 37.21 26.46 37.21 23.08 37.94 23.08 37.94 23 38.62 22.97 39.3 22.97 39.97 26.36 39.87 29.74 39.58 33.13 39.58 36.41 39.58 39.69 40 42.97 40 42.97 39.77 43 39.56 43 39.32
                         43 38.83 42.92 38.33 42.84 37.84 41.63 37.37 39.25 37.21 38.4 36.54 38.04 36.25 37.68 35.47 37.5 35.05 36.2 32.4 35.3 29.61 34.14 26.9 32.17 22.32 30.39 17.66 28.45 13.05 28.45 13.05 23.15 0.55 23.15 0.55 23.08 0.36 22.97 0.18 22.87-0
-                        22.87-0 21.5-0 21.5-0 21.5-0 19.56-0 19.56-0 19.56-0 12.33 18.85 12.33 18.85 12.33 18.85 6.2 34.9 6.2 34.9 5.12 37.71 2.48 37.19 0.05 37.94 0.05 37.94-0 40-0 40Z " fill="rgb(191,47,27) "/></svg>
+                        22.87-0 21.5-0 21.5-0 21.5-0 19.56-0 19.56-0 19.56-0 12.33 18.85 12.33 18.85 12.33 18.85 6.2 34.9 6.2 34.9 5.12 37.71 2.48 37.19 0.05 37.94 0.05 37.94-0 40-0 40Z "
+                            fill="rgb(191,47,27) " /></svg>
                     <h3 class="servises__title ">Clean Typography</h3>
-                    <div class="servises__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
+                    <div class="servises__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                        maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
                 </div>
                 <div class="servises__offer ">
-                    <svg class="servises__img " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="53px " height="40px " viewBox="0 0 53 40 ">
-                    <path d="M 16.6 32.72C 16.97 32.35 16.97 31.77 16.6 31.39 16.6 31.39 5.25 20 5.25 20 5.25 20 16.6 8.61 16.6 8.61 16.97 8.23 16.97 7.65 16.6 7.27 16.6 7.27 15.16 5.83 15.16 5.83 14.78 5.45 14.2 5.45 13.83 5.83 13.83 5.83 0.38 19.33
+                    <svg class="servises__img " width="53px " height="40px " viewBox="0 0 53 40 ">
+                        <path d="M 16.6 32.72C 16.97 32.35 16.97 31.77 16.6 31.39 16.6 31.39 5.25 20 5.25 20 5.25 20 16.6 8.61 16.6 8.61 16.97 8.23 16.97 7.65 16.6 7.27 16.6 7.27 15.16 5.83 15.16 5.83 14.78 5.45 14.2 5.45 13.83 5.83 13.83 5.83 0.38 19.33
                         0.38 19.33-0 19.71-0 20.29 0.38 20.67 0.38 20.67 13.83 34.17 13.83 34.17 14.2 34.55 14.78 34.55 15.16 34.17 15.16 34.17 16.6 32.72 16.6 32.72ZM 33.66 1.8C 33.8 1.3 33.51 0.78 33.02 0.64 33.02 0.64 31.23 0.14 31.23 0.14 30.77-0 30.25
                         0.29 30.11 0.78 30.11 0.78 19.34 38.2 19.34 38.2 19.2 38.69 19.49 39.22 19.98 39.36 19.98 39.36 21.77 39.85 21.77 39.85 22.23 40 22.75 39.71 22.89 39.22 22.89 39.22 33.66 1.8 33.66 1.8ZM 52.62 20.67C 53 20.29 53 19.71 52.62 19.33 52.62
                         19.33 39.17 5.83 39.17 5.83 38.8 5.45 38.22 5.45 37.84 5.83 37.84 5.83 36.4 7.27 36.4 7.27 36.03 7.65 36.03 8.23 36.4 8.61 36.4 8.61 47.75 20 47.75 20 47.75 20 36.4 31.39 36.4 31.39 36.03 31.77 36.03 32.35 36.4 32.72 36.4 32.72 37.84
-                        34.17 37.84 34.17 38.22 34.55 38.8 34.55 39.17 34.17 39.17 34.17 52.62 20.67 52.62 20.67Z " fill="rgb(191,47,27) "/></svg>
+                        34.17 37.84 34.17 38.22 34.55 38.8 34.55 39.17 34.17 39.17 34.17 52.62 20.67 52.62 20.67Z "
+                            fill="rgb(191,47,27) " /></svg>
                     <h3 class="servises__title ">Rock Solid Code</h3>
-                    <div class="servises__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
+                    <div class="servises__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                        maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
                 </div>
                 <div class="servises__offer ">
-                    <svg class="servises__img " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="48px " height="49px " viewBox="0 0 48 49 ">
-                    <path fillRule="evenodd " d="M 23.99 0.87C 10.74 0.87-0 11.61-0 24.86-0 38.12 10.74 48.86 23.99 48.86 37.25 48.86 47.99 38.12 47.99 24.86 47.99 11.61 37.25 0.87 23.99 0.87ZM 23.99 4.29C 27.48 4.29 30.77 5.18 33.66 6.7 33.66 6.7 28.47
+                    <svg class="servises__img " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink "
+                        width="48px " height="49px " viewBox="0 0 48 49 ">
+                        <path fillRule="evenodd " d="M 23.99 0.87C 10.74 0.87-0 11.61-0 24.86-0 38.12 10.74 48.86 23.99 48.86 37.25 48.86 47.99 38.12 47.99 24.86 47.99 11.61 37.25 0.87 23.99 0.87ZM 23.99 4.29C 27.48 4.29 30.77 5.18 33.66 6.7 33.66 6.7 28.47
                         11.9 28.47 11.9 27.05 11.42 25.57 11.15 23.99 11.15 22.44 11.15 20.94 11.42 19.52 11.9 19.52 11.9 14.33 6.7 14.33 6.7 17.22 5.18 20.51 4.29 23.99 4.29ZM 5.84 34.53C 4.31 31.64 3.43 28.34 3.43 24.86 3.43 21.38 4.31 18.09 5.84 15.19
                         5.84 15.19 11.03 20.39 11.03 20.39 10.55 21.81 10.28 23.28 10.28 24.86 10.28 26.41 10.55 27.91 11.03 29.33 11.03 29.33 5.84 34.53 5.84 34.53ZM 23.99 45.43C 20.51 45.43 17.22 44.54 14.33 43.02 14.33 43.02 19.52 37.82 19.52 37.82 20.94
                         38.3 22.44 38.57 23.99 38.57 25.57 38.57 27.05 38.3 28.47 37.82 28.47 37.82 33.66 43.02 33.66 43.02 30.77 44.54 27.48 45.43 23.99 45.43ZM 23.99 35.14C 18.32 35.14 13.71 30.54 13.71 24.86 13.71 19.18 18.32 14.58 23.99 14.58 29.67 14.58
                         34.28 19.18 34.28 24.86 34.28 30.54 29.67 35.14 23.99 35.14ZM 36.96 29.33C 37.44 27.91 37.7 26.41 37.7 24.86 37.7 23.31 37.44 21.81 36.96 20.39 36.96 20.39 42.15 15.19 42.15 15.19 43.68 18.09 44.56 21.38 44.56 24.86 44.56 28.34 43.68
-                        31.64 42.15 34.53 42.15 34.53 36.96 29.33 36.96 29.33Z " fill="rgb(191,47,27) "/></svg>
+                        31.64 42.15 34.53 42.15 34.53 36.96 29.33 36.96 29.33Z "
+                            fill="rgb(191,47,27) " /></svg>
                     <h3 class="servises__title ">Expert Support</h3>
-                    <div class="servises__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
+                    <div class="servises__text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                        maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</div>
 
                 </div>
             </div>
         </section>
         <section class="about ">
+            <a name="about"></a>
             <div class="container ">
                 <h2 class="sctitle ">About us</h2>
                 <p class="undertitle ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
                 <div class="about__articles ">
-                    <article class="about__article ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</article>
-                    <article class="about__article ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</article>
+                    <article class="about__article ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam
+                        nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no
+                        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat.
+                        Lorem ipsum dolor sit amet. Lorem ipsum eat.</article>
+                    <article class="about__article ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam
+                        nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos
+                        et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no
+                        sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat.
+                        Lorem ipsum dolor sit amet. Lorem ipsum eat.</article>
                 </div>
                 <div class="about__slider ">
                     <div class="slider ">
-                        <div class="slider__inner ">
+                        <div class="slider__inner">
                             <div class="slider__foto ">
                                 <img class="slider__img " src="./images/foto1.png ">
                                 <div class="slider__social ">
                                     <div class="slider__icons ">
-                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a> 
-                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a> 
-                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a> 
-                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a> 
+                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a>
                                     </div>
                                 </div>
                             </div>
-                              <p class="slider__name ">Md. Khalil Uddin</p>
+                            <p class="slider__name ">Md. Khalil Uddin</p>
                             <p class="slider__posirtion "> Head of Ideas</p>
                         </div>
                         <div class="slider__inner ">
@@ -122,10 +155,10 @@
                                 <img class="slider__img " src="./images/foto3.png ">
                                 <div class="slider__social ">
                                     <div class="slider__icons ">
-                                    <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a> 
+                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a>
                                     </div>
                                 </div>
                             </div>
@@ -137,10 +170,10 @@
                                 <img class="slider__img " src="./images/foto4.png ">
                                 <div class="slider__social ">
                                     <div class="slider__icons ">
-                                    <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a> 
+                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a>
                                     </div>
                                 </div>
                             </div>
@@ -152,10 +185,10 @@
                                 <img class="slider__img " src="./images/foto1.png ">
                                 <div class="slider__social ">
                                     <div class="slider__icons ">
-                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a> 
-                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a> 
-                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a> 
-                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a> 
+                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a>
                                     </div>
                                 </div>
                             </div>
@@ -167,10 +200,10 @@
                                 <img class="slider__img " src="./images/foto2.png ">
                                 <div class="slider__social ">
                                     <div class="slider__icons ">
-                                    <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a> 
+                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a>
                                     </div>
                                 </div>
                             </div>
@@ -182,10 +215,10 @@
                                 <img class="slider__img " src="./images/foto3.png ">
                                 <div class="slider__social ">
                                     <div class="slider__icons ">
-                                    <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a> 
-                                    <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a> 
+                                        <a class="slider__icon "><img src="./images/icons/Facebook.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-twitter.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/GoogleP.svg "></a>
+                                        <a class="slider__icon "><img src="./images/icons/fa-linkedin.svg "></a>
                                     </div>
                                 </div>
                             </div>
@@ -208,15 +241,16 @@
                             <p class="slider__position "> Shamim Mia</p>
                         </div>
                     </div>
-                   <button class ="prev " type="button ">❮</button>
-                   <button class="next " type="button ">❯</button>
+                    <button class="prev " type="button ">❮</button>
+                    <button class="next " type="button ">❯</button>
 
                 </div>
-            
+
             </div>
         </section>
-        <section class="works " >
-            <div class="container " >
+        <section class="works ">
+            <a name="works"></a>
+            <div class="container ">
                 <h2 class="sctitle ">Latest Works</h2>
                 <div class="works__tab undertitle ">
                     <button type="button " class="works__tablinks " data-item="all " autofocus>All</button>
@@ -226,82 +260,81 @@
                     <button type="button " class="works__tablinks " data-item="strategy ">Strategy</button>
                 </div>
                 <div class="works__content ">
-                    <div class="works__tabcontent show " data-item="all "> 
+                    <div class="works__tabcontent show " data-item="all ">
                         <div class="example ">
                             <img class="example__img " src="./images/work1.png ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work22.png ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work33.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work44.png ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work55.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work66.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work77.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work88.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work99.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
-                    
-                    </div>
+                            </div>
+                        </div>
 
+                    </div>
                     <div class="works__tabcontent " data-item="branding ">
                         <div class="example ">
                             <img class="example__img " src="./images/work33.jpg ">
@@ -309,72 +342,72 @@
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work11.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work33.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work44.png ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work55.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work66.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work77.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work88.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work99.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                     </div>
                     <div class="works__tabcontent " data-item="design ">
                         <div class="example ">
@@ -383,146 +416,146 @@
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work88.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work33.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work44.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work55.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work66.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work77.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work88.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work99.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                     </div>
-                    <div id="Tokyo " class="works__tabcontent " data-item="development ">
+                    <div class="works__tabcontent " data-item="development ">
                         <div class="example ">
                             <img class="example__img " src="./images/work11.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work11.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work11.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work44.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work55.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work66.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work77.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work88.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work99.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                     </div>
                     <div class="works__tabcontent " data-item="strategy ">
                         <div class="example ">
@@ -531,72 +564,72 @@
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work77.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work33.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work44.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work55.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work66.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work77.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work88.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                         <div class="example ">
                             <img class="example__img " src="./images/work99.jpg ">
                             <div class="example__context ">
                                 <h3 class="example__title ">Hair Dresser</h3>
                                 <p>Branding</p>
                                 <button type="button " class="example__btn ">VIEW&nbsp;&nbsp;❯</button>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -604,22 +637,27 @@
         <section class="project ">
             <h2 class="sctitle " hidden>Let's talk about YOUR PROJECT!</h2>
             <div class="project__inner ">
-                <p class="project__text ">Do you like OUR WORK so far?<br>
-                Let's talk about YOUR PROJECT!</p>
+                <p class="project__text ">Do you like OUR WORK so far?<br> Let's talk about YOUR PROJECT!</p>
                 <button type="button " class="project__btn ">Get in Touch</button>
             </div>
         </section>
         <section class="blog ">
-            <div class=" container ">
+            <a name="blog"></a>
+            <div class="container ">
                 <h2 class="sctitle ">Recent blog posts</h2>
                 <p class="undertitle ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
                 <div class="post ">
                     <img class="post__img " src="./images/blog11.png ">
                     <div class="post__inner ">
-                        <div class = "post__date "><time  pubdate datetime="2018-october-18 ">18<p class="post__text ">oct</time></div>
+                        <div class="post__date "><time pubdate datetime="2018-october-18 ">18<p class="post__text ">oct</time></div>
                         <h3 class="post__title ">Startup ideas needs to be funded</h3>
                         <p class="post__undertitle ">By<span class="hovred "><i>Khalil</span>Uddin in <span class="hovred ">Development</i></span></p>
-                        <article class="post__text ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam</article>
+                        <article class="post__text ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed
+                            diam</article>
                         <a class="post__link ">Read more</a>
                     </div>
                 </div>
@@ -627,17 +665,23 @@
                 <div class="post ">
                     <img class="post__img " src="./images/blog22.png ">
                     <div class="post__inner ">
-                        <div class = "post__date "><time pubdate datetime="2018-october-18 ">18<p class="post__text ">oct</p></time></div>
+                        <div class="post__date "><time pubdate datetime="2018-october-18 ">18<p class="post__text ">oct</p></time></div>
                         <h3 class="post__title ">User Interface Designing Elements</h3>
-                        <p class="post__undertitle "><i>By<span class="hovred ">Khalil</span>Uddin in <span class="hovred ">Development</i></span></p>
-                        <article class="post__text ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam</article>
+                        <p class="post__undertitle "><i>By<span class="hovred ">Khalil</span>Uddin in <span class="hovred ">Development</i></span>
+                        </p>
+                        <article class="post__text ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no
+                            sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam</article>
                         <a class="post__link ">Read more</a>
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <section class="clients ">
+            <a name="clients"></a>
             <div class="clients__slider ">
                 <div class="clients__slide ">
                     <div class="clients__brands ">
@@ -647,7 +691,9 @@
                         <a href="# "><img class="clients__logo " src="./images/client4.png "></a>
                         <a href="# "><img class="clients__logo " src="./images/client5.png "></a>
                     </div>
-                    <blockquote class="clients__review "><i>"Havaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br> Temporibus autem quibusdam et aut officiis debitis aut rerum"</i>
+                    <blockquote class="clients__review "><i>"Havaing placeat facere possimus, omnis voluptas assumenda
+                            est, omnis dolor repellendus.<br> Temporibus autem quibusdam et aut officiis debitis aut
+                            rerum"</i>
                     </blockquote>
                     <p>John Doe, Google Inc.</p>
                 </div>
@@ -659,28 +705,33 @@
                         <a href="# "><img class="clients__logo " src="./images/client2.png "></a>
                         <a href="# "><img class="clients__logo " src="./images/client3.png "></a>
                     </div>
-                    <blockquote class="clients__review "><i>"Havaing  placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br> Temporibus autem quibusdam et aut officiis debitis aut rerum"</i></blockquote>
+                    <blockquote class="clients__review "><i>"Havaing placeat facere possimus, omnis voluptas assumenda
+                            est, omnis dolor repellendus.<br> Temporibus autem quibusdam et aut officiis debitis aut
+                            rerum"</i></blockquote>
                     <p>John Doe, Google Inc.</p>
                 </div>
-                <div class="clients__slide ">
+                <div class="clients__slide">
                     <div class="clients__brands ">
                         <a href="# "><img class="clients__logo " src="./images/client3.png "></a>
                         <a href="# "><img class="clients__logo " src="./images/client1.png "></a>
                         <a href="# "><img class="clients__logo " src="./images/client2.png "></a>
-                        <a href="# "><img class="clients__logo " src="./images/client4.png "></a>
-                        <a href="# "><img class="clients__logo " src="./images/client5.png "></a>
+                        <a href="#"><img class="clients__logo " src="./images/client4.png "></a>
+                        <a href="#"><img class="clients__logo " src="./images/client5.png "></a>
                     </div>
-                    <blockquote class="clients__review "><i>"Havaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br> Temporibus autem quibusdam et aut officiis debitis aut rerum"</i></blockquote>
+                    <blockquote class="clients__review "><i>"Havaing placeat facere possimus, omnis voluptas assumenda
+                            est, omnis dolor repellendus.<br> Temporibus autem quibusdam et aut officiis debitis aut
+                            rerum"</i></blockquote>
                     <p>John Doe, Google Inc.</p>
                 </div>
                 <div class="clients__dots">
-                    <span class="clients__dot "></span>
-                    <span class="clients__dot "></span>
-                    <span class="clients__dot "></span>
+                    <span class="clients__dot"></span>
+                    <span class="clients__dot"></span>
+                    <span class="clients__dot"></span>
                 </div>
             </div>
         </section>
         <section class="contacts">
+            <a name="contacts"></a>
             <div class="container">
                 <h2 class="sctitle">Get in touch</h2>
                 <p class="undertitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
@@ -691,7 +742,7 @@
                             <div>
                                 <h3 class="contact__title">Address</h3>
                                 <address class="contact__link">
-                                312, 7th Ave, New York <br>NY 101200, United States of America
+                                    312, 7th Ave, New York <br>NY 101200, United States of America
                                 </address>
                             </div>
                         </div>
@@ -718,7 +769,8 @@
                         <div class="form__wrap">
                             <input class="form__input " type="text" name="user-name" required placeholder="YOUR NAME">
                             <p class="message-error--required">* You should enter your name here</p>
-                            <input class="form__input js-email" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="YOUR EMAIL">
+                            <input class="form__input js-email" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                placeholder="YOUR EMAIL">
                             <p class="message-error--required">* You should enter your email here</p>
                         </div>
                         <div class="form__wrap">
@@ -734,15 +786,14 @@
             </div>
         </section>
     </div>
-
-    <footer class="footer ">
+    <footer class="footer container">
         <div class="footer__socials">
             <a class="footer__icon" href="twitter.com"><img src="./images/icons/Twitter.svg"></a>
             <a class="footer__icon" href="Facebook.com"><img src="./images/icons/Facebook.svg"></a>
             <a class="footer__icon" href="GoogleP"><img src="./images/icons/GoogleP.svg"></a>
             <a class="footer__icon" href="linkedin.com"><img src="./images/icons/fa-linkedin.svg"></a>
         </div>
-        <p>© 2015 Startup, Designed by ShapedTheme</p>
+        <p>© 2015 Starsstup, Designed by ShapedTheme</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <script src="script.js " defer></script>
