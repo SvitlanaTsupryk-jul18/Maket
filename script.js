@@ -6,6 +6,8 @@
     showSlides();
     jsForm();
     burger();
+    modal();
+    smoothScrollLinks();
     ////////// slider in about
 
     function sliderAbout() {
@@ -194,8 +196,6 @@
     }
     //////buttons modal
 
-    modal();
-
     function modal() {
         let modalbtn = document.querySelector(".wellcome__btn");
         let modalbtnPro = document.querySelector(".project__btn");
@@ -228,15 +228,12 @@
 
     ////smoothScroll
 
-    smoothScrollLinks();
-
     function smoothScrollLinks() {
         let nav = document.querySelector(".nav")
         nav.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
-                console.log(this.getAttribute('href'));
-                nav.querySelector(this.getAttribute('href')).scrollIntoView({
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
