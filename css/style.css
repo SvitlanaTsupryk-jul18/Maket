@@ -1,5 +1,5 @@
 @import url(normalize.css);
-.servises, .about, .works, .blog, .clients, .footer, .contacts {
+.servises, .about, .works, .blog, .clients, .contacts, .footer {
   padding: 100px 0; }
 
 .container {
@@ -41,7 +41,7 @@ body {
   margin-bottom: 70px; }
 
 @media only screen and (max-width: 768px) {
-  .servises, .about, .works, .blog, .clients, .footer, .contacts {
+  .servises, .about, .works, .blog, .clients, .contacts, .footer {
     padding: 50px 0; }
   body {
     padding-bottom: 195px; } }
@@ -51,7 +51,7 @@ body {
     margin-bottom: 20px; } }
 
 @media only screen and (max-width: 470px) and (min-width: 320px) {
-  .servises, .about, .works, .blog, .clients, .footer, .contacts {
+  .servises, .about, .works, .blog, .clients, .contacts, .footer {
     padding: 20px 0; }
   body {
     padding-bottom: 135px; }
@@ -625,79 +625,6 @@ body {
   to {
     opacity: 1; } }
 
-.footer {
-  background-color: #c0301c;
-  color: white;
-  font-size: 12px;
-  text-align: center;
-  text-transform: uppercase;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-  .footer__socials {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding-bottom: 60px; }
-    .footer__socials:before {
-      position: absolute;
-      content: " ";
-      top: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      width: 50px;
-      height: 2px;
-      background-color: white; }
-  .footer__icon {
-    padding-right: 30px;
-    position: relative;
-    transition: all 1s ease-in; }
-    .footer__icon:nth-child(2) {
-      padding: 0 40px 0 2px; }
-    .footer__icon::before {
-      position: absolute;
-      content: url(../images/icons/Ellipse.svg);
-      top: -50%;
-      left: -20%; }
-    .footer__icon:hover {
-      animation: flip 0.5s ease-in 1 #c0301c;
-      color: white; }
-
-@keyframes flip {
-  from {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  40% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  50% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  to {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; } }
-
-.wrapper {
-  background-color: #fff;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 0 5px #fff; }
-
 .contacts__wrapper {
   display: flex; }
 
@@ -782,3 +709,76 @@ body {
   .form {
     width: 90%;
     padding-bottom: 20px; } }
+
+.footer {
+  background-color: #c0301c;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 60px; }
+    .footer__socials:before {
+      position: absolute;
+      content: " ";
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      width: 50px;
+      height: 2px;
+      background-color: white; }
+  .footer__icon {
+    padding-right: 30px;
+    position: relative;
+    transition: all 1s ease-in; }
+    .footer__icon:nth-child(2) {
+      padding: 0 40px 0 2px; }
+    .footer__icon::before {
+      position: absolute;
+      content: url(../images/icons/Ellipse.svg);
+      top: -50%;
+      left: -20%; }
+    .footer__icon:hover {
+      animation: flip 0.5s ease-in 1 #c0301c;
+      color: white; }
+
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  40% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  50% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  to {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
+
+.wrapper {
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 5px #fff; }
