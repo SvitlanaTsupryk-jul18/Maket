@@ -116,7 +116,6 @@
 
 
 .burger-open {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-self: stretch;
@@ -130,6 +129,8 @@
     border-radius: 2px;
     background-color: rgba(192, 48, 28, 0.7);
     z-index: 2;
+    display: none;
+    transition: .3s;
 
     span {
         width: 35px;
@@ -139,12 +140,9 @@
         border-radius: 5px;
 
     }
-
 }
 
-// .burger--visibility {
-//     display: none;
-// }
+
 
 .burger-close {
     color: white;
@@ -168,9 +166,9 @@
         display: none;
     }
 
-    // .burger--visibility {
-    //     display: flex;
-    // }
+    .burger--visibility {
+        display: flex;
+    }
 
 
 }
