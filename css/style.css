@@ -294,7 +294,8 @@ body {
     line-height: 0;
     transition: all .2s ease; }
   .slider__img {
-    width: 100%; }
+    width: 100%;
+    line-height: 1; }
   .slider__social {
     visibility: hidden;
     position: absolute;
@@ -409,7 +410,8 @@ body {
     visibility: visible;
     opacity: 1; }
   .example__img {
-    max-width: 100%; }
+    max-width: 100%;
+    line-height: 1; }
   .example__context {
     visibility: hidden;
     position: absolute;
