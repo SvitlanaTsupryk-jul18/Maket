@@ -22,5 +22,8 @@
         "gulp-autoprefixer": "^6.0.0",
         "gulp-sass": "^4.0.2",
         "sweetalert2": "^7.29.2"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
     }
 }
