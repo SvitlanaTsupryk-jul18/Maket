@@ -36,8 +36,10 @@
         padding: 0 0.5em;
         width: 100%;
 
+
         &:hover .slider__social {
             visibility: visible;
+            opacity: 1;
         }
     }
 
@@ -45,6 +47,8 @@
         position: relative;
         width: 100%;
         text-align: center;
+        line-height: 0;
+        transition: all .2s ease;
     }
 
     &__img {
@@ -62,7 +66,8 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        transition: all 0.5s ease-in;
+        transition: all 0.3s ease-in;
+        opacity: 0;
     }
 
     &__icons {
@@ -73,7 +78,7 @@
     &__icon {
         border: 1px transparent solid;
         padding: 5px 10px;
-        transition: 0.3s;
+        transition: all .3s ease;
 
         &:hover {
             background-color: $main-color;
