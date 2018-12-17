@@ -58,6 +58,7 @@
         padding-top: 2em;
         font-weight: 700;
         transition: all .3s ease-in;
+        cursor: pointer;
 
         &:hover {
             color: $main-color;

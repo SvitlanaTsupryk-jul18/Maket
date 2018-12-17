@@ -1,10 +1,16 @@
-@import url(normalize.css);
 .servises, .about, .works, .blog, .clients, .contacts, .footer {
   padding: 100px 0; }
 
 .container {
   max-width: 1140px;
   margin: 0 auto; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
 
 @media (max-width: 1160px) {
   .container {
@@ -14,7 +20,7 @@ body {
   color: #555555;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-  padding-bottom: 295px;
+  padding-bottom: 285px;
   scroll-behavior: smooth; }
 
 .sctitle {
@@ -437,7 +443,8 @@ body {
     border: 2px white solid;
     color: #c0301c;
     margin-top: 2em;
-    transition: all .1s ease-in; }
+    transition: all .1s ease-in;
+    cursor: pointer; }
     .example__btn:hover {
       transform: skewX(-10deg);
       border-radius: 2px; }
@@ -492,7 +499,8 @@ body {
     text-transform: uppercase;
     transition: all 0.2s ease;
     padding: 18px 27px;
-    background: none; }
+    background: none;
+    cursor: pointer; }
     .project__btn:hover {
       color: #c0301c;
       background-color: white;
@@ -548,7 +556,8 @@ body {
     display: inline-block;
     padding-top: 2em;
     font-weight: 700;
-    transition: all .3s ease-in; }
+    transition: all .3s ease-in;
+    cursor: pointer; }
     .post__link:hover {
       color: #c0301c;
       transform: scaleX(1.1) translateX(10px); }
@@ -681,7 +690,8 @@ body {
     background-color: white;
     width: 170px;
     transition: all 0.2s ease;
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
     .form__btn:hover {
       color: white;
       background-color: #c0301c;

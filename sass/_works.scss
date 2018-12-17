@@ -94,6 +94,7 @@
         color: $main-color;
         margin-top: 2em;
         transition: all .1s ease-in;
+        cursor: pointer;
 
         &:hover {
             transform: skewX(-10deg);
