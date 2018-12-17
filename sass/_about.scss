@@ -73,12 +73,15 @@
 
     &__icons {
         padding-bottom: 2em;
-        width: 100%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     &__icon {
         border: 1px transparent solid;
-        padding: 5px 10px;
+        padding: 10px;
         transition: all .3s ease;
 
         &:hover {
