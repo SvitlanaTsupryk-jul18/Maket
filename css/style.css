@@ -797,7 +797,8 @@ body {
   background-color: #fff;
   position: relative;
   z-index: 2;
-  box-shadow: 0 0 5px #fff; }
+  box-shadow: 0 0 5px #fff;
+  scroll-behavior: smooth; }
 
 #btn-up {
   position: fixed;
@@ -812,7 +813,9 @@ body {
   box-shadow: 0 0 0 #c0301c;
   color: white;
   font-weight: bold;
-  transform: translate(50%, 50%); }
+  transform: translate(50%, 50%);
+  transition: .2s all ease-in;
+  opacity: 0; }
   #btn-up:hover {
     animation: pulse 1.5s infinite; }
 

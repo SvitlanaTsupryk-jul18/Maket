@@ -102,7 +102,7 @@
 
 .mob-menu {
     flex-direction: column;
-    background-color: rgba(192, 48, 28, 0.7);
+    background-color: $img-color;
     padding: 10px;
     transition: .5s;
     transform: translate(500%);
@@ -129,7 +129,7 @@
     right: 10%;
     padding: 10px;
     border-radius: 2px;
-    background-color: rgba(192, 48, 28, 0.7);
+    background-color: $img-color;
     z-index: 2;
     display: none;
     transition: .3s;

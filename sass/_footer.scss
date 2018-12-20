@@ -95,13 +95,13 @@
     position: relative;
     z-index: 2;
     box-shadow: 0 0 5px #fff;
+    scroll-behavior: smooth;
 }
 
 #btn-up {
     position: fixed;
     right: 10%;
     bottom: 10%;
-
     display: block;
     padding: 20px;
     border-radius: 50%;
@@ -112,6 +112,8 @@
     color: white;
     font-weight: bold;
     transform: translate(50%, 50%);
+    transition: .2s all ease-in;
+    opacity: 0;
 
     &:hover {
         animation: pulse 1.5s infinite;

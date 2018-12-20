@@ -2,12 +2,11 @@
     // invocation
     sliderAbout();
     Tabs();
-    var slideIndex = 0;
-    showSlides();
     jsForm();
     burger();
     modal();
     smoothScrollLinks();
+    toTop();
     ////////// slider in about
 
     function sliderAbout() {
@@ -50,12 +49,15 @@
             tabcontent.forEach(function (item, i, arr) {
                 tabcontent[i].classList.remove("show");
             });
-            let c = 'data-item =' + '"' + this.dataset.item + '"';
+            var c = 'data-item =' + '"' + this.dataset.item + '"';
             cont.querySelector("[" + c + "]").classList.add("show");
         };
     }
 
     ////////slider in clients
+
+    var slideIndex = 0;
+    showSlides();
 
     function showSlides() {
         var i;
@@ -238,5 +240,25 @@
                 });
             });
         });
+    }
+
+    /// button to top
+
+    function toTop() {
+        var buttonTop = document.querySelector("#btn-up");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                buttonTop.style.opacity = "1";
+            } else {
+                buttonTop.style.opacity = "0";
+            }
+        }
+
+        buttonTop.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(".hero").scrollIntoView({
+                behavior: 'smooth'
+            });
+        })
     }
 })();
