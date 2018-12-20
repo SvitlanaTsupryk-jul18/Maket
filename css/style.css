@@ -813,7 +813,6 @@ body {
   box-shadow: 0 0 0 #c0301c;
   color: white;
   font-weight: bold;
-  transform: translate(50%, 50%);
   transition: .2s all ease-in;
   opacity: 0; }
   #btn-up:hover {
