@@ -765,17 +765,20 @@
                     </div>
                     <form class="form js-form" action="/example/handler.php" method="post">
                         <div class="form__wrap">
-                            <label><input class="form__input " type="text" name="user-name" required placeholder="YOUR NAME"></label>
+                            <input class="form__input " type="text" name="user-name" required placeholder="YOUR NAME"
+                                aria-label="enter your name">
                             <p class="message-error--required">* You should enter your name here</p>
-                            <label><input class="form__input js-email" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                    placeholder="YOUR EMAIL"></label>
+                            <input class="form__input js-email" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                placeholder="YOUR EMAIL" aria-label="enter your email">
                             <p class="message-error--required">* You should enter your email here</p>
                         </div>
                         <div class="form__wrap">
-                            <label><input class="form__input" type="text" name="subject" placeholder="YOUR SUBJECT"></label>
-                            <label><input class="form__input" type="text" name="company-name" placeholder="YOUR COMPANY"></label>
+                            <input class="form__input" type="text" name="subject" placeholder="YOUR SUBJECT" aria-label="enter subject of your message">
+                            <input class="form__input" type="text" name="company-name" placeholder="YOUR COMPANY"
+                                aria-label="enter name of your company">
                         </div>
-                        <textarea class="form__input form__input--textarea" type="text" name="message" placeholder="WRITE YOUR MESSAGE"></textarea>
+                        <textarea class="form__input form__input--textarea" type="text" name="message" placeholder="WRITE YOUR MESSAGE"
+                            aria-label="enter your message"></textarea>
                         <button class="form__input form__btn" type="submit">SEND MESSAGE</button>
                         <span class="red">*</span>We’ll contact you as as possible. We don’t reply on Monday.
                     </form>
