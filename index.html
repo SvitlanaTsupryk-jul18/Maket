@@ -765,15 +765,15 @@
                     </div>
                     <form class="form js-form" action="/example/handler.php" method="post">
                         <div class="form__wrap">
-                            <input class="form__input " type="text" name="user-name" required placeholder="YOUR NAME">
+                            <label><input class="form__input " type="text" name="user-name" required placeholder="YOUR NAME"></label>
                             <p class="message-error--required">* You should enter your name here</p>
-                            <input class="form__input js-email" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                placeholder="YOUR EMAIL">
+                            <label><input class="form__input js-email" type="email" name="user-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    placeholder="YOUR EMAIL"></label>
                             <p class="message-error--required">* You should enter your email here</p>
                         </div>
                         <div class="form__wrap">
-                            <input class="form__input" type="text" name="subject" placeholder="YOUR SUBJECT">
-                            <input class="form__input" type="text" name="company-name" placeholder="YOUR COMPANY">
+                            <label><input class="form__input" type="text" name="subject" placeholder="YOUR SUBJECT"></label>
+                            <label><input class="form__input" type="text" name="company-name" placeholder="YOUR COMPANY"></label>
                         </div>
                         <textarea class="form__input form__input--textarea" type="text" name="message" placeholder="WRITE YOUR MESSAGE"></textarea>
                         <button class="form__input form__btn" type="submit">SEND MESSAGE</button>
