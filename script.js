@@ -7,6 +7,19 @@
     modal();
     smoothScrollLinks();
     toTop();
+    Preloader();
+    //////preloader
+    function Preloader() {
+        document.body.onload = function () {
+            setTimeout(function () {
+                var preloader = document.querySelector(".preloader");
+                if (!preloader.classList.contains('done')) {
+                    preloader.classList.add('done');
+                }
+            }, 1000)
+        }
+    };
+
     ////////// slider in about
 
     function sliderAbout() {

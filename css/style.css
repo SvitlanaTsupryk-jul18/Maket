@@ -46,6 +46,47 @@ body {
   text-align: center;
   margin-bottom: 70px; }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(192, 48, 28, 0.7);
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 20%;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible; }
+
+.loader {
+  width: 90px;
+  height: 90px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top-color: #c0301c;
+  line-height: 60px;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s infinite; }
+
+.done {
+  opacity: 0;
+  visibility: hidden; }
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+
 @media only screen and (max-width: 768px) {
   .servises, .about, .works, .blog, .clients, .contacts, .footer {
     padding: 50px 0; }
