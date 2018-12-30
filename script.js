@@ -285,7 +285,7 @@
             .from('#left', 2, {
                 x: '-300%',
                 ease: Bounce.easeOut
-            }, delay = 2)
+            }, delay = 1)
             .from('#right', 2, {
                 x: '300%',
                 ease: Bounce.easeOut
