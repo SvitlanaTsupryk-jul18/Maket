@@ -297,7 +297,7 @@
             .from('.logo__h1', 1, {
                 y: '-100',
                 opacity: 0
-            })
+            }, "-=0.5")
             .staggerFrom(".nav__list", .5, {
                 y: '-50',
                 opacity: 0
