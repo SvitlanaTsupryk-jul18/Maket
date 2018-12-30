@@ -1,5 +1,6 @@
 (function () {
     // invocation
+    Preloader();
     sliderAbout();
     Tabs();
     jsForm();
@@ -7,7 +8,7 @@
     modal();
     smoothScrollLinks();
     toTop();
-    Preloader();
+    Tween()
     //////preloader
     function Preloader() {
         document.body.onload = function () {
@@ -189,6 +190,7 @@
     }
 
     ///burger-menu
+
     function burger() {
         let menu = document.querySelector(".mob-menu");
         let openbtn = document.querySelector(".js-burger-open");
@@ -273,5 +275,32 @@
                 behavior: 'smooth'
             });
         })
+    }
+
+    /////Gsap
+
+    function Tween() {
+        let tl = new TimelineMax();
+        tl
+            .from('#left', 2, {
+                x: '-300%',
+                ease: Bounce.easeOut
+            }, delay = 2)
+            .from('#right', 2, {
+                x: '300%',
+                ease: Bounce.easeOut
+            }, "-=2")
+            .from('.wellcome__btn', .5, {
+                borderRadius: "30px",
+                background: "#c0301c"
+            })
+            .from('.logo__h1', 1, {
+                y: '-100',
+                opacity: 0
+            })
+            .staggerFrom(".nav__list", .5, {
+                y: '-50',
+                opacity: 0
+            }, 0.1, "-=0.25")
     }
 })();
