@@ -8,8 +8,11 @@
     modal();
     smoothScrollLinks();
     toTop();
-    Tween()
+    Tween();
+    scrollMagic();
+
     //////preloader
+
     function Preloader() {
         document.body.onload = function () {
             setTimeout(function () {
@@ -93,8 +96,6 @@
     }
 
     //////// validation form 
-
-
 
     function jsForm() {
         let form = document.querySelector('.js-form');
@@ -302,5 +303,33 @@
                 y: '-50',
                 opacity: 0
             }, 0.1, "-=0.25")
+    }
+
+    function scrollMagic() {
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        var tween = TweenMax.from('#about', 1, {
+            y: 500,
+            opacity: 0
+        });
+        var tween1 = TweenMax.from('#contacts', 1, {
+            y: 500,
+            opacity: 0
+        });
+        // create a scene
+
+        var scene = new ScrollMagic.Scene({
+                triggerElement: "#servises",
+                offset: 400
+            })
+            .setTween(tween)
+            .addTo(controller);
+        var scene2 = new ScrollMagic.Scene({
+                triggerElement: "#clients",
+                offset: 300
+            })
+            .setTween(tween1)
+            .addTo(controller);
     }
 })();
