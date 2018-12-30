@@ -292,8 +292,7 @@
                 ease: Bounce.easeOut
             }, "-=2")
             .from('.wellcome__btn', .5, {
-                borderRadius: "30px",
-                background: "#c0301c"
+                borderRadius: "30px"
             })
             .from('.logo__h1', 1, {
                 y: '-100',
