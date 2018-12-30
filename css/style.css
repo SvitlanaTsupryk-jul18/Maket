@@ -799,20 +799,18 @@ body {
   .footer__icon {
     padding-right: 30px;
     position: relative;
-    transition: all .3s ease-in; }
+    transition: all .5s ease-in;
+    margin: 10px; }
     .footer__icon:nth-child(2) {
       padding: 0 40px 0 2px; }
     .footer__icon::before {
       position: absolute;
       content: url(../images/icons/Ellipse.svg);
       top: -50%;
-      left: -20%;
-      transition: all .3s; }
+      left: -20%; }
     .footer__icon:hover {
-      transform: scale(1.8);
+      transform: scale(1.5) rotate(360deg);
       transform-origin: 0; }
-      .footer__icon:hover::before {
-        content: ""; }
 
 .wrapper {
   background-color: #fff;
